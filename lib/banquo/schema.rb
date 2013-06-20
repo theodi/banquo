@@ -6,6 +6,8 @@ class User
   
   timestamps!
   
+  many :datasets
+  
   before_validation :create_user, :on => :create
   validates_uniqueness_of :email
   validate :casper_success
