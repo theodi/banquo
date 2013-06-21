@@ -5,7 +5,6 @@ module Banquo
   end
   
   def self.create_certificate(options)
-    binding.pry
     cmd = `casperjs #{File.dirname(__FILE__)}/script/create-certificate.js #{BASE_URL} #{options[:user].email} #{options[:user].password} #{options[:uri]}`
     if cmd =~ /#{BASE_URL}\/certificate/ 
       cmd.strip
