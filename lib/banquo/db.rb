@@ -1,2 +1,2 @@
 MongoMapper.connection = Mongo::Connection.new('localhost')
-MongoMapper.database = 'councils'
+MongoMapper.database = 'banquo'
