@@ -1,8 +1,7 @@
-require 'dotenv'
 require 'mongo_mapper'
-Dotenv.load
 
+BASE_URL ||= "http://localhost:3000"
+
+require_relative 'banquo/banquo'
 require_relative 'banquo/db'
 require_relative 'banquo/schema'
-require_relative 'banquo/create-user'
-require_relative 'banquo/create-certificate'

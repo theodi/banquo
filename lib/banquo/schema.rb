@@ -15,7 +15,10 @@ class User
   private
   
   def create_user
-    @success = CreateUser.perform(email, password)
+    @success = Banquo.create_user({
+      :email => email, 
+      :password => password
+    })
   end
   
   def casper_success
@@ -40,7 +43,10 @@ class Dataset
   private
   
   def create_certificate
-    self.certificate = CreateCertificate.perform(user, uri)
+    self.certificate = Banquo.create_certificate({
+      :user => self.user, 
+      :uri => uri
+    })
   end
   
   def casper_success
