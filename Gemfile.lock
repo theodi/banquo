@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/theodi/data_kitten.git
+  revision: 1e7d7c6fd23bd6d6453cdf4ce4be923ad0a1f9ad
+  specs:
+    data_kitten (0.0.1)
+      git
+      json
+      linkeddata
+      nokogiri
+      rest-client
+
 PATH
   remote: .
   specs:
@@ -6,16 +17,6 @@ PATH
       casperjs
       mongo_mapper
       sinatra
-
-PATH
-  remote: /Users/stuart/Documents/data_kitten
-  specs:
-    data_kitten (0.0.1)
-      git
-      json
-      linkeddata
-      nokogiri
-      rest-client
 
 GEM
   remote: https://rubygems.org/

@@ -5,4 +5,4 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem "data_kitten", :path => "/Users/stuart/Documents/data_kitten"
+gem "data_kitten", :git => "git://github.com/theodi/data_kitten.git"
