@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 #ruby=ruby-2.0.0-p0
-#ruby-gemset=auto-certificate
+#ruby-gemset=banquo
 
-gem 'mongo_mapper'
-gem 'bson_ext'
-gem 'casperjs'
+gemspec
+
+gem "data_kitten", :path => "/Users/stuart/Documents/data_kitten"
