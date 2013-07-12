@@ -1,6 +1,6 @@
 module Banquo
   def self.create_user(options)
-    cmd = `casperjs #{File.dirname(__FILE__)}/script/create-user.js #{BASE_URL} #{options[:email]} #{options[:password]}`
+    cmd = `casperjs --web-security=no #{File.dirname(__FILE__)}/script/create-user.js #{BASE_URL} #{options[:email]} #{options[:password]}`
     cmd =~ /User created/ or false
   end
   
