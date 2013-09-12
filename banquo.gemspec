@@ -14,5 +14,4 @@ Gem::Specification.new do |s|
   s.add_dependency "mongo_mapper"
   s.add_dependency "bson_ext"
   s.add_dependency "casperjs"
-  s.add_dependency "sinatra"
 end
